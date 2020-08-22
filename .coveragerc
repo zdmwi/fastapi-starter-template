@@ -1,0 +1,6 @@
+[run]
+include =
+    app/*
+omit=
+    tests/*
+    scripts/*

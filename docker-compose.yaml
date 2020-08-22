@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+    api:
+        restart: always
+        hostname: api
+        build: .
+        ports:
+            - '5000:80'
+        volumes:
+            - "./app:/app/app"
+        command: /start-reload.sh
